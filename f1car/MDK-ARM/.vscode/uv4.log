@@ -1,0 +1,4 @@
+Load "f1car\\f1car.axf" 
+ST-LINK USB communication error
+Error: Flash Download failed  -  Target DLL has been cancelled
+Flash Load finished at 10:39:54

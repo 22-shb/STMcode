@@ -1,0 +1,26 @@
+*** Using Compiler 'V6.22', folder: 'D:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'f4FOC'
+foc_driver.c(39): error: call to undeclared library function 'abs' with type 'int (int)'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+   39 |     if (abs(d_angle) > (0.8f * 2 * PI)) {
+      |         ^
+foc_driver.c(39): note: include the header <math.h> or explicitly provide a declaration for 'abs'
+foc_driver.c(39): warning: using integer absolute value function 'abs' when argument is of floating point type [-Wabsolute-value]
+   39 |     if (abs(d_angle) > (0.8f * 2 * PI)) {
+      |         ^
+foc_driver.c(39): note: use function 'fabsf' instead
+   39 |     if (abs(d_angle) > (0.8f * 2 * PI)) {
+      |         ^~~
+      |         fabsf
+foc_driver.c(202): warning: enumeration values 'FOC_MODE_TORQUE' and 'FOC_MODE_ANGLE' not handled in switch [-Wswitch]
+  202 |     switch(hfoc->mode) {
+      |            ^~~~~~~~~~
+2 warnings and 1 error generated.
+compiling foc_driver.c...
+../Core/Src/main.c(31): error: 'foc_driver.h' file not found
+   31 | #include "foc_driver.h" // 引入 FOC 驱动库
+      |          ^~~~~~~~~~~~~~
+1 error generated.
+compiling main.c...
+"f4FOC\f4FOC.axf" - 2 Error(s), 2 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:01

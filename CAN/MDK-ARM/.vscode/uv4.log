@@ -1,0 +1,23 @@
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'CAN'
+compiling main.c...
+./Hardware/oled.h(13): warning:  #1295-D: Deprecated declaration OLED_Init - give arg types
+  void OLED_Init();
+./Hardware/oled.h(14): warning:  #1295-D: Deprecated declaration OLED_DisPlay_On - give arg types
+  void OLED_DisPlay_On();
+./Hardware/oled.h(15): warning:  #1295-D: Deprecated declaration OLED_DisPlay_Off - give arg types
+  void OLED_DisPlay_Off();
+./Hardware/oled.h(17): warning:  #1295-D: Deprecated declaration OLED_NewFrame - give arg types
+  void OLED_NewFrame();
+./Hardware/oled.h(18): warning:  #1295-D: Deprecated declaration OLED_ShowFrame - give arg types
+  void OLED_ShowFrame();
+./Hardware/oled.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif // __OLED_H__
+../Core/Src/main.c(62): warning:  #177-D: variable "A"  was declared but never referenced
+    char A[128];
+../Core/Src/main.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=6620 RO-data=2000 RW-data=20 ZI-data=2916  
+FromELF: creating hex file...
+"CAN\CAN.axf" - 0 Error(s), 7 Warning(s).
+Build Time Elapsed:  00:00:03

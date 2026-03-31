@@ -1,0 +1,20 @@
+*** Using Compiler 'V6.23', folder: 'D:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'bujindianji'
+../Core/Src/main.c(100): error: call to undeclared function 'StepMotor_RotateCircle'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  100 |     StepMotor_RotateCircle(1, 8, 0);
+      |     ^
+../Core/Src/main.c(103): error: call to undeclared function 'StepMotor_RotateAngle'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  103 |     StepMotor_RotateAngle(180.0f, 3, 1);
+      |     ^
+../Core/Src/main.c(106): error: call to undeclared function 'StepMotor_SetSpeed'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  106 |     StepMotor_SetSpeed(1, 1, 512);
+      |     ^
+../Core/Src/main.c(106): note: did you mean 'Stepper_SetSpeed'?
+./qudong\bujin.h(31): note: 'Stepper_SetSpeed' declared here
+   31 | void Stepper_SetSpeed(Stepper_Motor* motor, uint16_t speed);
+      |      ^
+3 errors generated.
+compiling main.c...
+"bujindianji\bujindianji.axf" - 3 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:01
