@@ -90,6 +90,7 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM1_Init();
   MX_USART1_UART_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_Base_Start(&htim1);
   HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
@@ -100,15 +101,15 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 500);
+    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 50);
     HAL_Delay(1000); 
-    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 1000);
+    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 100);
     HAL_Delay(1000);
-      __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 1500);
+      __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 150);
     HAL_Delay(1000);
-    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 2000 );
+    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 200 );
     HAL_Delay(1000);
-    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 2500);
+    __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 250);
     HAL_Delay(1000);
     /* USER CODE END WHILE */
 
